@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch40" orientation="portrait">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SF-Mono-Regular.otf">
-            <string>SFMono-Regular</string>
+        <array key="iosevka-brew-regular.ttf">
+            <string>Iosevka</string>
         </array>
     </customFonts>
     <scenes>
@@ -21,7 +20,7 @@
                     <items>
                         <group width="1" alignment="left" layout="vertical" spacing="2" id="6PL-bo-ZK7" userLabel="Terminal Group">
                             <items>
-                                <label alignment="left" text="user@watch:~ $ now" textAlignment="left" id="bcc-Ix-MUn">
+                                <label alignment="left" text="hal@watch:~ $ now" textAlignment="left" id="bcc-Ix-MUn">
                                     <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="14"/>
                                     <variation key="device=watch38mm">
                                         <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="12"/>
@@ -30,12 +29,12 @@
                                         <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
                                     </variation>
                                     <variation key="device=watch44mm">
-                                        <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                        <fontDescription key="font" name="Iosevka" family="Iosevka" pointSize="18"/>
                                     </variation>
                                 </label>
                                 <group width="1" alignment="left" spacing="0.0" id="GBb-1y-udv" userLabel="Time Group">
                                     <items>
-                                        <label alignment="left" text="[TIME]" textAlignment="left" id="qQG-zV-zo7">
+                                        <label alignment="left" text="[TIME] " textAlignment="left" id="qQG-zV-zo7">
                                             <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="14"/>
                                             <variation key="device=watch38mm">
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="12"/>
@@ -44,13 +43,16 @@
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
                                             </variation>
                                             <variation key="device=watch44mm">
-                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                                <fontDescription key="font" name="Iosevka" family="Iosevka" pointSize="18"/>
                                             </variation>
                                         </label>
                                         <dateLabel alignment="left" textAlignment="left" id="GWk-PS-Ar6">
                                             <color key="textColor" red="0.68235294120000001" green="0.95294117649999999" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="14"/>
                                             <dateFormatterStyle key="timeStyle" medium="YES"/>
+                                            <date key="previewedDate" timeIntervalSinceReferenceDate="431971740">
+                                                <!--2014-09-09 16:09:00 +0000-->
+                                            </date>
                                             <variation key="device=watch38mm">
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="12"/>
                                             </variation>
@@ -58,14 +60,14 @@
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
                                             </variation>
                                             <variation key="device=watch44mm">
-                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                                <fontDescription key="font" name="Iosevka" family="Iosevka" pointSize="18"/>
                                             </variation>
                                         </dateLabel>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" spacing="0.0" id="4j4-fS-xRK" userLabel="Date Group">
                                     <items>
-                                        <label alignment="left" text="[DATE]" textAlignment="left" id="AyY-Sy-085">
+                                        <label alignment="left" text="[DATE] " textAlignment="left" id="AyY-Sy-085">
                                             <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="14"/>
                                             <variation key="device=watch38mm">
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="12"/>
@@ -74,12 +76,15 @@
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
                                             </variation>
                                             <variation key="device=watch44mm">
-                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                                <fontDescription key="font" name="Iosevka" family="Iosevka" pointSize="18"/>
                                             </variation>
                                         </label>
-                                        <dateLabel alignment="left" textAlignment="left" format="MMM d, E" id="vBZ-QA-Zms">
+                                        <dateLabel alignment="left" textAlignment="left" format="EEE MMM d" id="vBZ-QA-Zms">
                                             <color key="textColor" red="0.32549019607843138" green="0.6470588235294118" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="14"/>
+                                            <date key="previewedDate" timeIntervalSinceReferenceDate="432061740">
+                                                <!--2014-09-10 17:09:00 +0000-->
+                                            </date>
                                             <variation key="device=watch38mm">
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="12"/>
                                             </variation>
@@ -87,14 +92,14 @@
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
                                             </variation>
                                             <variation key="device=watch44mm">
-                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                                <fontDescription key="font" name="Iosevka" family="Iosevka" pointSize="18"/>
                                             </variation>
                                         </dateLabel>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" spacing="0.0" id="lYl-fG-xTG" userLabel="Temperature Group">
                                     <items>
-                                        <label alignment="left" text="[TEMP]" textAlignment="left" id="azw-dO-cxG">
+                                        <label alignment="left" text="[TEMP] " textAlignment="left" id="azw-dO-cxG">
                                             <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="14"/>
                                             <variation key="device=watch38mm">
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="12"/>
@@ -103,7 +108,7 @@
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
                                             </variation>
                                             <variation key="device=watch44mm">
-                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                                <fontDescription key="font" name="Iosevka" family="Iosevka" pointSize="18"/>
                                             </variation>
                                         </label>
                                         <label alignment="left" text="--" id="SKt-9Q-acu" userLabel="Temperature Label">
@@ -116,14 +121,14 @@
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
                                             </variation>
                                             <variation key="device=watch44mm">
-                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                                <fontDescription key="font" name="Iosevka" family="Iosevka" pointSize="18"/>
                                             </variation>
                                         </label>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" spacing="0.0" id="d1R-FW-N0Q" userLabel="Battery Group">
                                     <items>
-                                        <label alignment="left" text="[BATT]" textAlignment="left" id="W9f-Aj-CzT">
+                                        <label alignment="left" text="[BATT] " textAlignment="left" id="W9f-Aj-CzT">
                                             <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="14"/>
                                             <variation key="device=watch38mm">
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="12"/>
@@ -132,7 +137,7 @@
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
                                             </variation>
                                             <variation key="device=watch44mm">
-                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                                <fontDescription key="font" name="Iosevka" family="Iosevka" pointSize="18"/>
                                             </variation>
                                         </label>
                                         <label alignment="left" text="--" textAlignment="left" id="3dH-MF-gwo" userLabel="Battery Label">
@@ -145,14 +150,14 @@
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
                                             </variation>
                                             <variation key="device=watch44mm">
-                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                                <fontDescription key="font" name="Iosevka" family="Iosevka" pointSize="18"/>
                                             </variation>
                                         </label>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" spacing="0.0" id="vaI-MQ-EJU" userLabel="Ring Group">
                                     <items>
-                                        <label alignment="left" text="[RING]" textAlignment="left" id="y6B-53-HkG">
+                                        <label alignment="left" text="[RING] " textAlignment="left" id="y6B-53-HkG">
                                             <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="14"/>
                                             <variation key="device=watch38mm">
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="12"/>
@@ -161,7 +166,7 @@
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
                                             </variation>
                                             <variation key="device=watch44mm">
-                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                                <fontDescription key="font" name="Iosevka" family="Iosevka" pointSize="18"/>
                                             </variation>
                                         </label>
                                         <label alignment="left" text="--" textAlignment="left" id="Ffh-bh-IK7" userLabel="Activity Label">
@@ -173,14 +178,14 @@
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
                                             </variation>
                                             <variation key="device=watch44mm">
-                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                                <fontDescription key="font" name="Iosevka" family="Iosevka" pointSize="18"/>
                                             </variation>
                                         </label>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" spacing="0.0" id="S8h-WK-zOs" userLabel="Step Group">
                                     <items>
-                                        <label alignment="left" text="[STEP]" textAlignment="left" id="jGw-XG-Xac">
+                                        <label alignment="left" text="[STEP] " textAlignment="left" id="jGw-XG-Xac">
                                             <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="14"/>
                                             <variation key="device=watch38mm">
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="12"/>
@@ -189,7 +194,7 @@
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
                                             </variation>
                                             <variation key="device=watch44mm">
-                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                                <fontDescription key="font" name="Iosevka" family="Iosevka" pointSize="18"/>
                                             </variation>
                                         </label>
                                         <label alignment="left" text="--" textAlignment="left" id="wW6-sr-Wl2">
@@ -202,14 +207,14 @@
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
                                             </variation>
                                             <variation key="device=watch44mm">
-                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                                <fontDescription key="font" name="Iosevka" family="Iosevka" pointSize="18"/>
                                             </variation>
                                         </label>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" spacing="0.0" id="7QQ-dm-023" userLabel="Heart Rate Group">
                                     <items>
-                                        <label alignment="left" text="[L_HR]" textAlignment="left" id="A1R-GR-dXZ">
+                                        <label alignment="left" text="[L_HR] " textAlignment="left" id="A1R-GR-dXZ">
                                             <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="14"/>
                                             <variation key="device=watch38mm">
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="12"/>
@@ -218,7 +223,7 @@
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
                                             </variation>
                                             <variation key="device=watch44mm">
-                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                                <fontDescription key="font" name="Iosevka" family="Iosevka" pointSize="18"/>
                                             </variation>
                                         </label>
                                         <label alignment="left" text="--" textAlignment="left" id="CJN-qq-25o" userLabel="Heart Rate Label">
@@ -231,27 +236,15 @@
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
                                             </variation>
                                             <variation key="device=watch44mm">
-                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                                <fontDescription key="font" name="Iosevka" family="Iosevka" pointSize="18"/>
                                             </variation>
                                         </label>
                                     </items>
                                 </group>
-                                <label alignment="left" text="user@watch:~ $ " textAlignment="left" id="V36-NY-x0W">
-                                    <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="14"/>
-                                    <variation key="device=watch38mm">
-                                        <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="12"/>
-                                    </variation>
-                                    <variation key="device=watch42mm">
-                                        <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
-                                    </variation>
-                                    <variation key="device=watch44mm">
-                                        <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
-                                    </variation>
-                                </label>
                             </items>
                             <edgeInsets key="margins" left="0.0" right="0.0" top="11" bottom="0.0"/>
                             <variation key="device=watch44mm">
-                                <edgeInsets key="margins" left="0.0" right="0.0" top="15" bottom="0.0"/>
+                                <edgeInsets key="margins" left="0.0" right="0.0" top="19" bottom="0.0"/>
                             </variation>
                         </group>
                         <spriteKitScene height="2" alignment="left" hidden="YES" id="uPV-PX-nfj" userLabel="Dummy SpriteKit Scene for Full Screen"/>

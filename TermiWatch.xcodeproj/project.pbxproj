@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B964FC322A0B8B4008F1C3E /* iosevka-brew-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B964FC222A0B8B1008F1C3E /* iosevka-brew-regular.ttf */; };
 		5D3E852D21A0246C00FA946B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3E852C21A0246C00FA946B /* AppDelegate.swift */; };
 		5D3E852F21A0246C00FA946B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3E852E21A0246C00FA946B /* ViewController.swift */; };
 		5D3E853221A0246C00FA946B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D3E853021A0246C00FA946B /* Main.storyboard */; };
@@ -111,6 +112,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B964FC222A0B8B1008F1C3E /* iosevka-brew-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iosevka-brew-regular.ttf"; sourceTree = "<group>"; };
 		5D3E852921A0246C00FA946B /* TermiWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TermiWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3E852C21A0246C00FA946B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D3E852E21A0246C00FA946B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				5D3E854021A0246E00FA946B /* Interface.storyboard */,
 				5D3E854321A0246E00FA946B /* Assets.xcassets */,
 				5D3E856521A026FD00FA946B /* SF-Mono-Regular.otf */,
+				2B964FC222A0B8B1008F1C3E /* iosevka-brew-regular.ttf */,
 				5D3E854521A0246E00FA946B /* Info.plist */,
 			);
 			path = "TermiWatch WatchKit App";
@@ -374,6 +377,7 @@
 			files = (
 				5D3E856621A0271300FA946B /* SF-Mono-Regular.otf in Resources */,
 				5D3E854421A0246E00FA946B /* Assets.xcassets in Resources */,
+				2B964FC322A0B8B4008F1C3E /* iosevka-brew-regular.ttf in Resources */,
 				5D3E854221A0246E00FA946B /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
