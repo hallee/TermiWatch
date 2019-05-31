@@ -45,14 +45,14 @@ var hideDefaultTimeLabelOnce: () -> Void = {
 // MARK: - Activity string
 
 struct ActivityRingColors {
-  static let excercise = UIColor(red: 1.0, green: 0.231, blue: 0.188, alpha: 1.0)
-  static let move = UIColor(red: 0.016, green: 0.871, blue: 0.443, alpha: 1.0)
-  static let stand = UIColor(red: 0.353, green: 0.784, blue: 0.98, alpha: 1.0)
+  static let excercise = UIColor(displayP3Red: 206/255, green: 66/255, blue: 77/255, alpha: 1.0)
+  static let move = UIColor(displayP3Red: 34/255, green: 160/255, blue: 85/255, alpha: 1.0)
+  static let stand = UIColor(displayP3Red: 0, green: 201/255, blue: 194/255, alpha: 1.0)
 }
 
 struct BatteryStateColors {
-  static let normal = UIColor(red: 0.569, green: 0.831, blue: 0.384, alpha: 1.0)
-  static let low = UIColor.red
+  static let normal = UIColor(displayP3Red: 0/255, green: 201/255, blue: 194/255, alpha: 1.0)
+  static let low = UIColor(displayP3Red: 206/255, green: 66/255, blue: 77/255, alpha: 1.0)
 }
 
 func colorAttributedString(string: String, color: UIColor)
